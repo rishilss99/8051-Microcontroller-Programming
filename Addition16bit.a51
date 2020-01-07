@@ -1,0 +1,13 @@
+ORG 0H
+	MOV A,31h
+	MOV B,33h
+	ADD A,B
+	MOV 39h,A
+	MOV A,30h
+	MOV B,32h
+	ADDC A,B
+	JNC X
+	MOV 37h,#01h
+	X:
+	MOV 38h,A
+END

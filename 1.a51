@@ -1,0 +1,15 @@
+;2-bit addition
+ORG 0000H
+	MOV A,31H
+	MOV B,33H
+	ADD A,B
+	MOV 36H,A
+	MOV A,30H
+	MOV B,32H
+	ADDC A,B
+	MOV 35H,A
+	CLR A
+	ADDC A,#00
+	MOV 34H,A
+	
+END

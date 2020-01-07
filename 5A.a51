@@ -1,0 +1,11 @@
+ORG 0H
+	MOV R0,#30H
+	MOV R1,#49H
+	MOV R2,#0AH
+	Y: 
+	MOV A , @ R0
+	MOV @ R1, A
+	INC R0
+	DEC R1 
+	DJNZ R2,Y
+END

@@ -1,0 +1,7 @@
+ORG 0H
+	MOV A,20h
+	MOV B,21h
+	MUL AB
+	MOV 51h,A
+	MOV 50h,B
+END
